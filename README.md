@@ -1,2 +1,2 @@
 # custom-wolfram-functions
-custom functions for research and misc
+this repository will be updated periodically by introducing custom functions for research and misc ..
