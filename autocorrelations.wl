@@ -10,6 +10,6 @@ CosineDistance etc. *)
 imageCorrelation[input_Image]:= ImageAdjust@ImageCorrelate[input,input,PerformanceGoal -> "Quality"];
 
 autoCorr2D[input:{{_?NumberQ, _?NumberQ}..} | _Image]:= Module[{mat},
-If[Head@input === Image, mat = ImageData@input];
+mat = If[Head@input === Image, ImageData@input, input];
 ListCorrelate[mat,mat,{-1,1},0]
 ];
