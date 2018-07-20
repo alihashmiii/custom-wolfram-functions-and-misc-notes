@@ -1,3 +1,5 @@
+(* for detecting spots at subpixel resolution *)
+
 segmentImage[image_Image, LoGkernel_, thresh_] := MorphologicalComponents[
    FillingTransform@MorphologicalBinarize[ColorNegate@ImageAdjust@LaplacianGaussianFilter[image, LoGkernel], thresh]
    ];
