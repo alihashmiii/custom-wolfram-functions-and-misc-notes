@@ -15,4 +15,4 @@ rec = Flatten[Table[{i,Length@nearestFunc[#,{All,i}]},{i,0,distDelaunay,1}]&/@ce
 pts = Cases[rec,{_,_?(#<=1&)}];
 \[ScriptCapitalA] = WeightedData@pts[[All,1]];
 N@*Mean@\[ScriptCapitalA]
-] (* where distDelaunay is the meanParticleDist@labeledMat *)
+] (* where distDelaunay is the meanParticleDist@centroids *)
