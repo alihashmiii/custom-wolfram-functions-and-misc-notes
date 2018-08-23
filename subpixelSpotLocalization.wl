@@ -2,7 +2,8 @@
 Note: This is a custom function. The last If statement needs to be modified for usage elsewhere.
 *)
 
-(* modelFit[image_, mask_, shape_, box_] := Block[{pixelpos, pixelval, img, data, data3D, a, b, mx, my, sx, sy, x, y, fm, loc},
+(*
+   modelFit[image_, mask_, shape_, box_] := Block[{pixelpos, pixelval, img, data, data3D, a, b, mx, my, sx, sy, x, y, fm, loc},
    pixelpos = mask["NonzeroPositions"];
    pixelval = PixelValue[image, pixelpos];
    img = ReplacePixelValue[shape, Thread[PixelValuePositions[shape, 1] -> pixelval]];
@@ -12,7 +13,8 @@ Note: This is a custom function. The last If statement needs to be modified for 
                b])^2/(2 sx^2)), {a, b, mx, my, sx, sy}, {x, y}];
    {a, b, mx, my, sx, sy} = {a, b, mx, my, sx, sy} /. fm["BestFitParameters"];
    loc = Mean /@ Transpose@box + {mx, my} - (Dimensions@data) / 2.0
-   ]; *)
+   ]; 
+*)
    
 modelFit[image_, mask_, shape_, box_] := Block[{pixelpos,pixelval,img,data,a,b,weights,data3D,
  mx,my,sx,sy,x,y,fm,dx,dy,cent,background,bestfit,intensityGuess,brightest,
