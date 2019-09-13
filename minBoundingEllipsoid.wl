@@ -4,7 +4,7 @@ https://www.wolfram.com/language/12/convex-optimization/minimal-bounding-ellipso
 n = 3; (* dim *)
 
 im = image3D (*input Image3D here *);
-pixpos = PixelValuePositions[im,1]; (* find positions where pixel = 1*)
+pixpos = PixelValuePositions[im,1];
 meanpos = N@Mean[pixpos];
 convexHull = ConvexHullMesh[# - meanpos & /@ pixpos, BoxRatios -> {1, 1, 1}];
 mesh = DiscretizeRegion[convexHull,BoxRatios -> {1,1,1},ImageSize -> Tiny]
