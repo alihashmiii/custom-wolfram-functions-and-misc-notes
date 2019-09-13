@@ -1,3 +1,6 @@
+(* Minimum Bounding Ellipsoid: as given on the Wolfram Documentation:
+https://www.wolfram.com/language/12/convex-optimization/minimal-bounding-ellipsoid.html?product=mathematica*)
+
 n = 3; (* dim *)
 
 im = image3D (*input Image3D here *);
