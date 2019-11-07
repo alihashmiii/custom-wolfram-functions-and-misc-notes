@@ -1,0 +1,1 @@
+CreateDocument@NotebookTools`NotebookDiff[]
