@@ -8,20 +8,25 @@ NSolve ---- numerically solves an equation or system of equations or inequalitie
 
 Minimize ---- minimize a function with constrains (even over regions)
 
-Maximize ---- same as Minimize albeit it maximises a function 
+Maximize ---- same as Minimize albeit it maximizes a function 
 
 NMinimize ---- numerical version of Minimize
 
 NMaximize ---- numerical version of Maximize
 
+FindMinimum ---- searches for local minimum for a function of var or several vars 
+                 (even with constraints)
+
+FindMaximum ---- opposite of FindMinimum
+
 FindRoot ---- searches numerically for the root of a function or simultaneously for
               functions
 
-DSolve ---- solves differential eqn(s) (odes/pdes) / even over some region
+DSolve ---- solves differential eqn(s) (odes/pdes/dae) / even over some region
 
 DSolveValue ---- outputs the value of DSolve
 
-NDSolve ---- numerical solver for differential eqn(s) (odes/pdes) / even over some
+NDSolve ---- numerical solver for differential eqn(s) (odes/pdes/dae) / even over
              region
 
 NDSolveValue ---- outputs the value of NDSolve
